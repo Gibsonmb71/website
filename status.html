@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gibson Bell | Album Status</title>
+    <meta
+      name="description"
+      content="A current album and photoshoot progress tracker for Gibson Bell."
+    />
+    <link rel="preload" as="image" href="assets/aero-field.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="desktop" id="top">
+      <header class="window-frame">
+        <div class="title-bar">
+          <a class="brand" href="index.html" aria-label="Gibson Bell home">
+            <span class="brand-orb">GB</span>
+            <span>Gibson Bell - Album Status</span>
+          </a>
+          <div class="window-controls" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Album status navigation">
+          <a href="index.html">Home</a>
+          <a href="projects.html">All Projects</a>
+          <a href="#shoots">Status</a>
+          <a href="index.html#flickr">Recent Albums</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="content-window">
+        <section class="hero status-hero" aria-labelledby="status-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Progress</p>
+            <h1 id="status-title">Album Status</h1>
+            <p class="intro">
+              Current photoshoots and album progress, tracked in three simple
+              states: editing, selecting, and published.
+            </p>
+            <div class="hero-actions" aria-label="Status page links">
+              <a class="button primary" href="#shoots">View Statuses</a>
+              <a class="button secondary" href="index.html">Back Home</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="pane status-pane reveal-on-scroll" id="shoots" aria-labelledby="shoots-title">
+          <div class="section-heading">
+            <p class="eyebrow">Photoshoots</p>
+            <h2 id="shoots-title">Current Album Progress</h2>
+          </div>
+
+          <div class="status-grid">
+            <!-- To update a shoot, change data-status plus the status-pill class/text. Options: editing, selecting, published. -->
+            <article class="shoot-card" data-status="editing">
+              <div class="shoot-card-header">
+                <p class="project-kicker">Shoot 01</p>
+                <span class="status-pill status-editing">Editing</span>
+              </div>
+              <h3>Placeholder Photoshoot One</h3>
+              <p>
+                A short note about where this shoot happened, what the album is,
+                or what still needs finishing.
+              </p>
+              <div class="progress-meter" aria-label="Editing progress">
+                <span style="width: 62%"></span>
+              </div>
+              <a class="project-link" href="https://www.flickr.com/photos/gibsonbell/albums/PLACEHOLDER-ALBUM-1">
+                Album link
+              </a>
+            </article>
+
+            <article class="shoot-card" data-status="selecting">
+              <div class="shoot-card-header">
+                <p class="project-kicker">Shoot 02</p>
+                <span class="status-pill status-selecting">Selecting</span>
+              </div>
+              <h3>Placeholder Photoshoot Two</h3>
+              <p>
+                A short note about the current selection pass, rough image count,
+                or expected publishing window.
+              </p>
+              <div class="progress-meter" aria-label="Selecting progress">
+                <span style="width: 38%"></span>
+              </div>
+              <a class="project-link" href="https://www.flickr.com/photos/gibsonbell/albums/PLACEHOLDER-ALBUM-2">
+                Album link
+              </a>
+            </article>
+
+            <article class="shoot-card" data-status="published">
+              <div class="shoot-card-header">
+                <p class="project-kicker">Shoot 03</p>
+                <span class="status-pill status-published">Published</span>
+              </div>
+              <h3>Placeholder Photoshoot Three</h3>
+              <p>
+                A short note about the finished album, location, visual theme,
+                or anything worth remembering.
+              </p>
+              <div class="progress-meter" aria-label="Published progress">
+                <span style="width: 100%"></span>
+              </div>
+              <a class="project-link" href="https://www.flickr.com/photos/gibsonbell/albums/PLACEHOLDER-ALBUM-3">
+                Album link
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="status-bar">
+        <span>Ready</span>
+        <span>Album Status</span>
+        <span>
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons BY-NC-SA 4.0
+          </a>
+        </span>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

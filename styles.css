@@ -36,7 +36,7 @@ body {
   background:
     radial-gradient(circle at 88% 10%, #ffffff 0 0.7rem, transparent 0.8rem),
     radial-gradient(circle at 84% 14%, #ffffff 0 0.35rem, transparent 0.42rem),
-    url("assets/aero-field.png") center top / cover fixed no-repeat,
+    url("aero-field.png") center top / cover fixed no-repeat,
     #6ed6ee;
 }
 
